@@ -97,6 +97,11 @@ function headless_horseman_scripts() {
 add_action( 'wp_enqueue_scripts', 'headless_horseman_scripts' );
 
 /**
+ * Load required and recommended plugins
+ */
+require get_template_directory() . '/config/tgm/init.php';
+
+/**
  * Functions which enhance the theme by hooking into WordPress.
  */
 require get_template_directory() . '/inc/template-functions.php';
