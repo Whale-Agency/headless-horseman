@@ -60,6 +60,14 @@ function headless_horseman_register_required_plugins() {
 	$plugins = array(
 		// This is an example of how to include a plugin from the WordPress Plugin Repository.
         array(
+            'name'      => 'Git Updater',
+            'slug'      => 'git-updater',
+            'source'    => get_template_directory() . '/config/tgm/plugins/git-updater-10.6.9.zip',
+            'required'  => true,
+            'external_url' => 'https://github.com/afragen/git-updater'
+        ),
+
+        array(
             'name'      => 'REST API – Head Tags',
             'slug'      => 'rest-api-head-tags',
             'required'  => true,
