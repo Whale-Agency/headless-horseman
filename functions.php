@@ -9,7 +9,7 @@
 
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( '_S_VERSION', '1.0.0' );
+	define( '_S_VERSION', '0.0.129' );
 }
 
 if ( ! function_exists( 'headless_horseman_setup' ) ) :
@@ -105,4 +105,9 @@ require get_template_directory() . '/config/tgm/init.php';
  * Functions which enhance the theme by hooking into WordPress.
  */
 require get_template_directory() . '/inc/template-functions.php';
+
+/**
+ * Customizer
+ */
+require get_template_directory() . '/inc/customizer/customizer.php';
 
