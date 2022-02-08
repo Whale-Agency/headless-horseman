@@ -106,3 +106,8 @@ require get_template_directory() . '/config/tgm/init.php';
  */
 require get_template_directory() . '/inc/template-functions.php';
 
+/**
+ * Customizer
+ */
+require get_template_directory() . '/inc/customizer/customizer.php';
+
