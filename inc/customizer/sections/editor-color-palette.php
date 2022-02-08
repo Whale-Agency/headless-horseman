@@ -1,6 +1,6 @@
 <?php
 /**
- * Functions that registers editor color pallet section
+ * Functions that registers editor color palette section
  * that contains a repeater field to allow admin
  * easily adjust default pallet.
  */
@@ -9,7 +9,7 @@
  * Section arguments
  */
 $section_args = [
-  'title'       => esc_html__( 'Editor color pallete', 'headless-horseman' ),
+  'title'       => esc_html__( 'Editor color palette', 'headless-horseman' ),
   'description' => '',
   'panel'       => 'headless_horseman_demo_panel',
 ];
@@ -17,17 +17,17 @@ $section_args = [
 /**
  * Instantiate new section
  */
-new \Kirki\Section( 'editor_color_pallete_section', $section_args );
+new \Kirki\Section( 'editor_color_palette_section', $section_args );
 
 /**
  * Instantiate control
  */
 new \Kirki\Field\Repeater(
   [
-    'settings'    => 'editor_color_pallete_repeater',
-    'label'       => esc_html__( 'Editor color pallete', 'headless_horseman' ),
-    'description' => esc_html__( 'Color pallete will be used inside gutenberg editor.', 'headless_horseman' ),
-    'section'     => 'editor_color_pallete_section', // the section ID
+    'settings'    => 'editor_color_palette_repeater',
+    'label'       => esc_html__( 'Editor color palette', 'headless_horseman' ),
+    'description' => esc_html__( 'Color palette will be used inside gutenberg editor.', 'headless_horseman' ),
+    'section'     => 'editor_color_palette_section', // the section ID
     'row_label'    => [
       'type'  => 'field',
       'value' => esc_html__( 'Color name', 'headless_horseman' ),
@@ -58,19 +58,19 @@ new \Kirki\Field\Repeater(
  */
 if ( ! function_exists( 'headless_horseman_add_gutenberg_color_palette' ) ) :
   function headless_horseman_add_gutenberg_color_palette() {
-    //Get color pallet from customizer options
-    $color_pallete = get_theme_mod( 'editor_color_pallete_repeater');
+    //Get color palette from customizer options
+    $color_palette = get_theme_mod( 'editor_color_palette_repeater');
 
     //Generate color slug
-    $color_pallete = array_map(function($color_item) {
+    $color_palette = array_map(function($color_item) {
       $color_item['slug'] = sanitize_title($color_item['name']);
       return $color_item;
-    }, $color_pallete);
+    }, $color_palette);
 
-    //Generate editor color pallete
+    //Generate editor color palette
     add_theme_support(
       'editor-color-palette',
-      $color_pallete
+      $color_palette
     );
   }
 endif;

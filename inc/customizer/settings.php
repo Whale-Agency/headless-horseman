@@ -17,4 +17,4 @@ new \Kirki\Panel(
 /**
  * Add Sections.
  */
-require get_template_directory() . '/inc/customizer/sections/editor-color-pallete.php';
+require get_template_directory() . '/inc/customizer/sections/editor-color-palette.php';
