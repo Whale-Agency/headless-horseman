@@ -11,13 +11,13 @@
 $section_args = [
   'title'       => esc_html__( 'Editor color palette', 'headless-horseman' ),
   'description' => '',
-  'panel'       => 'headless_horseman_demo_panel',
+  'panel'       => 'headless_horseman_panel',
 ];
-
 /**
  * Instantiate new section
  */
 new \Kirki\Section( 'editor_color_palette_section', $section_args );
+
 
 /**
  * Instantiate control

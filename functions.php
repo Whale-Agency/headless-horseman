@@ -76,8 +76,8 @@ add_action( 'after_setup_theme', 'headless_horseman_setup' );
 function headless_horseman_widgets_init() {
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Sidebar', 'headless-horseman' ),
-			'id'            => 'sidebar-1',
+			'name'          => esc_html__( 'Footer', 'headless-horseman' ),
+			'id'            => 'footer-sidebar',
 			'description'   => esc_html__( 'Add widgets here.', 'headless-horseman' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
