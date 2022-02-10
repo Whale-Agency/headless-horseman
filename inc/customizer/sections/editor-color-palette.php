@@ -54,7 +54,7 @@ new \Kirki\Field\Repeater(
 );
 
 /**
- * Add custom color palette go gutenberg editor
+ * Custom color palette
  */
 if ( ! function_exists( 'headless_horseman_add_gutenberg_color_palette' ) ) :
   function headless_horseman_add_gutenberg_color_palette() {
