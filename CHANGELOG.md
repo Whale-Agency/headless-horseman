@@ -1,3 +1,14 @@
+## [0.0.130] - 2022-02-10
+
+- Added option to add editor styles via Customizer.
+- Small issues fixes.
+
+### Added
+    - /inc/customizer/assets/css/style.css
+    - /inc/customizer/sections/editor-style.php
+    - /assets/css/style-editor.css
+
+
 ## [0.0.012] - 2022-02-08
 
 - Added kirki framework to handle wordpress cusomizer api. https://github.com/kirki-framework/kirki
