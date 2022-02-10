@@ -1,0 +1,5 @@
+/* Make custom CS editor height bigger */
+.customize-control-code_editor .CodeMirror,
+.customize-control-code_editor textarea {
+  height: 60vh;
+}

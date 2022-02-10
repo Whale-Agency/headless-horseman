@@ -45,10 +45,10 @@ function headless_horseman_footer_select() {
 
   new \Kirki\Field\Select(
     [
-      'settings'    => 'footer_block',
+      'settings'    => 'footer_block_select',
       'label'       => esc_html__( 'Footer selection', 'headless-horseman' ),
-      'description' => esc_html__( 'Pick any reusable block to use it as a default footer.', 'headless-horseman' ),
-      'section'     => 'footer_area_section',
+      'description' => __( 'Pick any reusable block to use it as a default footer. <a href="/wp-admin/edit.php?post_type=wp_block" target="_blank">Manage reusable blocks</a>', 'headless-horseman' ),
+      'section'     => 'footer_section',
       'default'     => 'primary',
       'choices'     => $select_options,
       'priority'    => 30,

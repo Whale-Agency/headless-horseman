@@ -20,6 +20,11 @@ new \Kirki\Panel(
 require get_template_directory() . '/inc/customizer/sections/editor-color-palette.php';
 
 /**
+ * Add editor style.
+ */
+require get_template_directory() . '/inc/customizer/sections/editor-style.php';
+
+/**
  * Add default footer area.
  */
 require get_template_directory() . '/inc/customizer/sections/footer-area.php';
