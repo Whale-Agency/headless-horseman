@@ -9,14 +9,14 @@
  * Section arguments
  */
 $section_args = [
-  'title'       => esc_html__( 'Editor color palette', 'headless-horseman' ),
+  'title'       => esc_html__( 'Color palette', 'headless-horseman' ),
   'description' => '',
   'panel'       => 'headless_horseman_panel',
 ];
 /**
  * Instantiate new section
  */
-new \Kirki\Section( 'editor_color_palette_section', $section_args );
+new \Kirki\Section( 'color_palette_section', $section_args );
 
 
 /**
@@ -24,10 +24,10 @@ new \Kirki\Section( 'editor_color_palette_section', $section_args );
  */
 new \Kirki\Field\Repeater(
   [
-    'settings'    => 'editor_color_palette_repeater',
-    'label'       => esc_html__( 'Editor color palette', 'headless_horseman' ),
+    'settings'    => 'hh_color_palette',
+    'label'       => esc_html__( 'Color palette', 'headless_horseman' ),
     'description' => esc_html__( 'Color palette will be used inside gutenberg editor.', 'headless_horseman' ),
-    'section'     => 'editor_color_palette_section', // the section ID
+    'section'     => 'color_palette_section', // the section ID
     'row_label'    => [
       'type'  => 'field',
       'value' => esc_html__( 'Color name', 'headless_horseman' ),
@@ -59,7 +59,7 @@ new \Kirki\Field\Repeater(
 if ( ! function_exists( 'headless_horseman_add_gutenberg_color_palette' ) ) :
   function headless_horseman_add_gutenberg_color_palette() {
     //Get color palette from customizer options
-    $color_palette = get_theme_mod( 'editor_color_palette_repeater');
+    $color_palette = get_theme_mod( 'hh_color_palette');
 
     //Generate color slug
     $color_palette = array_map(function($color_item) {
