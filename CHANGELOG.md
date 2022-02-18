@@ -1,3 +1,10 @@
+## [0.0.131] - 2022-02-18
+
+- Added headless horseman reusable blocks api endpoint to handle GET requests by passing block id as a parameter.
+
+### Added
+    - /inc/api/endpoints/reusable-blocks.php
+
 ## [0.0.130] - 2022-02-10
 
 - Added option to add editor styles via Customizer.
