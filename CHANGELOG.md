@@ -1,3 +1,10 @@
+## [0.0.132] - 2022-02-18
+
+- Customizer options rest api endpoint added to get all available theme mods.
+
+### Added
+    - /inc/api/endpoints/customizer-options.php
+
 ## [0.0.131] - 2022-02-18
 
 - Added headless horseman reusable blocks api endpoint to handle GET requests by passing block id as a parameter.
