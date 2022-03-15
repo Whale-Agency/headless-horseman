@@ -28,8 +28,3 @@ require get_template_directory() . '/inc/customizer/sections/editor-style.php';
  * Add default footer area.
  */
 require get_template_directory() . '/inc/customizer/sections/footer-area.php';
-
-/**
- * Add reusable blocks area
- */
-require get_template_directory() . '/inc/customizer/sections/reusable-blocks.php';
