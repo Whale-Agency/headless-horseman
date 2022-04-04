@@ -25,7 +25,7 @@ new \Kirki\Section( 'footer_section', $section_args );
 function headless_horseman_footer_select() {
   //query args
   $args = array(
-    'post_type'              => array('wp_block'),
+    'post_type'              => array('component'),
     'post_status'            => array('publish'),
     'posts_per_page'         => -1,
   );
