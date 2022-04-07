@@ -9,7 +9,7 @@
 
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( '_S_VERSION', '0.0.132' );
+  define( '_S_VERSION', '0.0.132' );
 }
 
 if ( ! function_exists( 'headless_horseman_setup' ) ) :
@@ -111,3 +111,7 @@ require get_template_directory() . '/inc/template-functions.php';
  */
 require get_template_directory() . '/inc/customizer/customizer.php';
 
+/**
+ * Blocks api
+ */
+require get_template_directory() . '/inc/blocks/blocks.php';
