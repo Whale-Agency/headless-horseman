@@ -14,3 +14,8 @@ require get_template_directory() . '/inc/api/includes.php';
  * Misc functionality
  */
 require get_template_directory() . '/inc/misc.php';
+
+/**
+ * Reusable components post type
+ */
+require get_template_directory() . '/inc/components-pt.php';
