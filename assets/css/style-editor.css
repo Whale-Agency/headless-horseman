@@ -1,0 +1,16 @@
+:root {--white: ;--red: #dd3333;--pink: #d64d9f;--oranje: #e8a010;--heading-black: #6b6b6b;}html .wp-block {
+  max-width: 1200px;
+}
+
+:root {
+		color: var(--text-black);
+}
+
+:root h1,
+:root h2,
+:root h3,
+:root h4,
+:root h5,
+:root h6 {
+  color: var(--heading-black);
+}

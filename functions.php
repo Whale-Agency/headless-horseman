@@ -9,7 +9,7 @@
 
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( '_S_VERSION', '1.0.0' );
+	define( '_S_VERSION', '0.0.129' );
 }
 
 if ( ! function_exists( 'headless_horseman_setup' ) ) :
@@ -76,8 +76,8 @@ add_action( 'after_setup_theme', 'headless_horseman_setup' );
 function headless_horseman_widgets_init() {
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Sidebar', 'headless-horseman' ),
-			'id'            => 'sidebar-1',
+			'name'          => esc_html__( 'Footer', 'headless-horseman' ),
+			'id'            => 'footer-sidebar',
 			'description'   => esc_html__( 'Add widgets here.', 'headless-horseman' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
@@ -106,3 +106,12 @@ require get_template_directory() . '/config/tgm/init.php';
  */
 require get_template_directory() . '/inc/template-functions.php';
 
+/**
+ * Customizer
+ */
+require get_template_directory() . '/inc/customizer/customizer.php';
+
+/**
+ * Blocks api
+ */
+require get_template_directory() . '/inc/blocks/blocks.php';
